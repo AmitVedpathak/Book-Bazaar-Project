@@ -20,7 +20,7 @@ function Signup() {
       password: data.password,
     };
     try {
-      const res = await axios.post("http://localhost:3045/user/signup", userInfo);
+      const res = await axios.post("/user/signup", userInfo);
       console.log(res.data);
       if (res.data) {
         toast.success("Signup successfully");
